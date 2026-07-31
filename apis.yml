@@ -1,8 +1,27 @@
 aid: nextsilicon
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nextsilicon.png
 name: NextSilicon
-description: 'NextSilicon is a company surfaced as a portfolio company of playground-global and added
-  to the API Evangelist network as a stub for enrichment. Sector: compute. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'NextSilicon is a deep-tech compute company building intelligent, software-defined
+  acceleration hardware for high-performance computing, AI, and vector-database workloads.
+  Its flagship Maverick-2 is a dataflow accelerator built on the Intelligent Compute
+  Architecture (ICA) that reconfigures itself at runtime, and its Arbel product is a
+  server-class RISC-V CPU core on TSMC process. A developer toolchain supports C/C++,
+  FORTRAN, OpenMP, and Kokkos, with planned CUDA and HIP/ROCm paths, letting teams run
+  existing code faster without rewrites or vendor lock-in. NextSilicon publishes no
+  public web API, SDK registry package, or open developer portal; its documentation
+  site is gated, so this profile captures company identity, its GitHub organization
+  (largely upstream compiler/Kokkos forks), and domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/nextsilicon/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Compute
+- High Performance Computing
+- Semiconductors
+- Hardware
+- Accelerators
+- RISC-V
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,18 @@ maintainers:
 common:
 - type: Website
   url: https://www.nextsilicon.com/
+- type: GitHubOrganization
+  url: https://github.com/nextsilicon
+- type: Blog
+  url: https://www.nextsilicon.com/insights
+- type: PrivacyPolicy
+  url: https://www.nextsilicon.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.nextsilicon.com/terms-of-use/
+- type: DomainSecurity
+  url: security/nextsilicon-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
